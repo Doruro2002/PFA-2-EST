@@ -1,0 +1,44 @@
+<ion-app>
+  <ion-menu menuId="menu-main" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/icon/user.png" alt="" srcset=""  >
+        <ion-label>
+          <h2>
+            Guest
+          </h2>
+          <p>
+            Hi!
+          </p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Add Branch
+        </ion-button>
+      </div>
+      <ion-list class="menu-items" lines="none">
+        <ion-item>
+          <ion-icon slot="start" name="pie-chart-outline"></ion-icon>Dashboard
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="browsers-outline"></ion-icon>Post Sessions
+        </ion-item>
+        <ion-item class="active">
+          <ion-icon slot="start" name="flash"></ion-icon>Live Sessions
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="chatbubble-ellipses-outline"></ion-icon>Messages
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="heart-outline"></ion-icon>Locum Librarys
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="exit-outline"></ion-icon>Sign Out
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
